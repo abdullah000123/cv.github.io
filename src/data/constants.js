@@ -319,7 +319,7 @@ export const projects = [
     description:
       "Drone Pilot is a mobile application designed to detect, recognize, and track objects in real time while continuously controlling a drone’s movement via USB-based MAVLink communication. It performs efficient on-device inference using optimized YOLOv8 and MobileNet models, enabling the smartphone to act as an intelligent, self-contained pilot. The app integrates live camera input (via CameraX), real-time object detection, and responsive flight control for autonomous navigation, surveillance, and object-following tasks — achieving over 25 FPS on modern devices. A key feature is target locking, which allows the user to select an object either by tapping on the screen or by providing a reference image. The app then locks onto the selected target using feature embedding and similarity matching, ensuring continuous tracking even in dynamic scenes. Optimizations such as TensorFlow Lite acceleration, GPU delegates, and NEON SIMD enhance real-time performance on edge devices like Android phones",
     image:
-      "https://drive.google.com/file/d/1nbvZHVlMrkUCTH3ulMvNzOGbWfmia_u3/view?usp=sharing",
+      "https://i.postimg.cc/7PMByJfg/done-final.jpg",
     tags: [
       "Android Studio",
       "Mavlink",
