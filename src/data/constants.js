@@ -10,7 +10,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/abdullah000123",
   resume:
-    "https://drive.google.com/file/d/1Zez68hLHBAGdMqKt48l9z7xR471_yZ5f/view?usp=sharing",
+    "https://drive.google.com/file/d/1mIzU2xp_Z60a_CJirbpry7XbnjTGjmRK/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/abdullah-khalid-1b9451260/",
   insta: "https://www.instagram.com/abdullah_khalid_0/",
 };
@@ -295,10 +295,90 @@ export const education = [
 
 export const projects = [
   {
+    id: 11,
+    title: "Ai Drone Gen 2 (Big Brother)",
+    date: "April 2025 - March 2026",
+    description:
+      `
+### Project Type
+Autonomous Aerial Robotics / AI Systems
+
+---
+
+### Project Overview
+**Big Brother** is a fully autonomous, next-generation AI drone platform designed to deliver high-performance autonomy at low cost.
+
+The system is engineered end-to-end—from hardware and embedded firmware to mobile control and real-time AI—focusing on speed, reliability, and minimal operator interaction.
+
+Unlike traditional UAV systems that require complex configuration and manual control, this platform operates as a **plug-and-play autonomous solution** managed entirely through a custom mobile application.
+
+---
+
+### Core Capabilities
+
+#### Autonomous Mission Execution
+- Operator inputs target location and visual references (target images) via mobile app
+- System autonomously handles:
+  - Path planning
+  - Navigation
+  - Obstacle avoidance
+  - Target detection and tracking
+- No manual piloting required after mission start
+
+#### AI & Perception System
+- Real-time environmental perception at **up to 80 FPS**
+- Optimized deep-learning inference pipeline for:
+  - Object detection
+  - Target recognition
+  - Decision-making under real-time constraints
+- Custom algorithmic optimizations for low-latency performance
+
+#### Performance & Payload
+- Rigid, high-strength frame design
+- Approximate **8 kg payload capacity**
+- Stable flight performance under heavy load
+
+#### Software Architecture
+- **Mobile App (Kotlin):** Mission control, configuration, and monitoring
+- **Autopilot Integration:** MAVLink-based communication with flight controller
+- **Native AI Acceleration:** C++ for high-speed image processing and inference optimization
+- Modular and extensible design for future upgrades
+
+---
+
+### Engineering Focus
+- End-to-end system integration (hardware + software)
+- Real-time AI optimization on resource-constrained platforms
+- Reliable autonomous decision-making
+- Operator simplicity without sacrificing capability
+
+---
+
+### Outcome
+This project demonstrates a scalable and practical approach to autonomous aerial intelligence—combining high-speed perception, robust autonomy, and intuitive control while pushing the limits of low-cost UAV platforms.
+`,
+    image:
+      "https://i.postimg.cc/d01HFCsw/drone-carbon.jpg",
+    tags: [
+      "Mavlink",
+      "Kotlin",
+      "C++",
+      "Deep learning",
+    
+    ],
+    category:[ "UAV's","Applications'S","AI"],
+    github: "sorry cant share",
+
+  },
+  
+  {
     id: 8,
     title: "Auto Vision Flow",
+
     date: "April 2025 - May 2025",
+
     description:
+
       "A cross-platform desktop application designed to streamline the end-to-end pipeline for vision-based AI systems. AVF enables users to label image data, train YOLO object detection models, and deploy them for real-time tracking across Windows, Linux, and Raspberry Pi devices. It includes a range of features such as custom dataset management, model configuration, and visual performance monitoring. Built with a focus on efficiency, usability, and edge-device optimization, AVF supports on-device inference using lightweight, quantized models—making it ideal for rapid prototyping and deployment in robotics, surveillance, and embedded AI applications.",
     image:
       "https://i.postimg.cc/vZ3YdgCx/splash.png",
@@ -308,16 +388,25 @@ export const projects = [
       "Ultralytics",
     
     ],
+
     category: "Applications",
     github: "sorry cant share now",
 
+
   },
+  
   {
     id: 10,
     title: "Drone Pilot",
     date: "june 2025 - Aug 2025",
     description:
-      "Drone Pilot is a mobile application designed to detect, recognize, and track objects in real time while continuously controlling a drone’s movement via USB-based MAVLink communication. It performs efficient on-device inference using optimized YOLOv8 and MobileNet models, enabling the smartphone to act as an intelligent, self-contained pilot. The app integrates live camera input (via CameraX), real-time object detection, and responsive flight control for autonomous navigation, surveillance, and object-following tasks — achieving over 25 FPS on modern devices. A key feature is target locking, which allows the user to select an object either by tapping on the screen or by providing a reference image. The app then locks onto the selected target using feature embedding and similarity matching, ensuring continuous tracking even in dynamic scenes. Optimizations such as TensorFlow Lite acceleration, GPU delegates, and NEON SIMD enhance real-time performance on edge devices like Android phones",
+      `Drone Pilot is a mobile application that transforms a smartphone into an intelligent, self-contained pilot capable of real-time object awareness and autonomous drone control. The system continuously analyzes live input from the mobile device’s camera while dynamically controlling the drone’s movement to support autonomous navigation, surveillance, and object-following missions.
+
+The application performs real-time visual analysis at over 25 frames per second (FPS) on modern mobile devices, enabling smooth tracking and responsive control in dynamic environments. By tightly coupling perception with motion, the platform maintains accurate positioning and stable behavior even as targets move or scene conditions change.
+
+A key feature of Drone Pilot is target locking, which allows users to select an object either by tapping directly on the live camera view or by providing a reference image. Once selected, the system locks onto the target and maintains continuous tracking, ensuring reliable performance even when the target undergoes movement, partial occlusion, or visual variation.
+
+Designed for portability and real-world deployment, the entire system runs directly on the mobile device using the built-in camera, eliminating the need for external computing hardware. This makes Drone Pilot well-suited for intelligent aerial assistance, autonomous monitoring, and mobile-first drone operations.`,
     image:
       "https://i.postimg.cc/7PMByJfg/done-final.jpg",
     tags: [
@@ -330,7 +419,7 @@ export const projects = [
       "Kotlin",
     
     ],
-    category: "Applications",
+    category: ["Applications","UAV's"],
     github: "Apologies, but I’m unable to share that due to confidentiality agreements with my company",
 
   },
@@ -359,7 +448,7 @@ export const projects = [
     image:
       "https://i.postimg.cc/R0pZw6Rx/robot1.jpg",
     tags: ["robot", "Ai Robot", "detection", "tracking"],
-    category: "UAV's",
+    category: "AI",
     github: "private",
   },
  
@@ -372,7 +461,7 @@ export const projects = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRruEq9RVkBvK34GaucJbGBRsEdYu0_KSUSzA&s",
     tags: ["Python", "hardware hacking", "drone"],
-    category: "UAV's",
+    category: "",
     github: "cant share right now",
   
   },
@@ -387,6 +476,51 @@ export const projects = [
     tags: ["sentence_transformers", "torch", "selenium", "chromadb" ,"transformers" ,"gemma-2b"],
     category: "AI",
     github: "Repo is private",
+  },
+   {
+    id: 14,
+    title: "Multi Camera Object Tracking Web App",
+    date: "Feb 2026",
+    description:
+
+      "A powerful real-time object detection system built with YOLOv8, Flask, and OpenCV. Supports both single image detection and parallel multi-camera live detection with custom zone monitoring",
+    image:
+      "https://i.postimg.cc/nzJzdZWR/Screenshot-from-2026-02-04-10-24-49.png",
+
+    tags: ["Python","Flask","AI","YOLO"],
+    category: ["Applications","AI"],
+    github: "https://github.com/abdullah000123/Multi-Camera-Object-Tracking-Web-App",
+
+  },
+  {
+    id: 15,
+    title: "Student LMS -Smart Attendance System",
+    date: "Jan 2026",
+    description:
+
+      "Smart Attendance System is a web-based Learning Management and attendance platform that uses real-time facial recognition to automatically mark student attendance without manual intervention. Built with Python Flask and dlib, the system eliminates traditional roll calls and prevents proxy attendance by verifying each student’s face during scheduled class hours through a live webcam feed. The platform features a dedicated admin dashboard where administrators can register students, manage subjects and class schedules, monitor attendance statistics, and generate detailed reports, while the student dashboard allows learners to securely mark attendance, view their attendance history, and track overall attendance percentages in real time. The system generates unique, irreversible face encodings for each student to ensure privacy and security, operates completely offline with high accuracy and fast recognition times, and is designed to be lightweight, cost-effective, and cross-platform, supporting Windows, macOS, Linux, and mobile browsers—making it suitable for schools, universities, training institutes, and research environments.",
+    image:
+      "https://i.postimg.cc/yNXMhHCm/attendance-system.jpg",
+
+    tags: ["Python","Flask","AI","opencv","Dlib","face reconition"],
+    category: ["Applications","AI"],
+    github: "https://github.com/abdullah000123/Smart-attendance-system",
+
+  },
+  {
+    id: 13,
+    title: "Whatsapp Spammer",
+    date: "dec 2025",
+    description:
+
+      "WhatsApp Spammer is a real-time automation tool built on top of WhatsApp Web that dynamically scrapes active chat and contact data and enables automated bulk messaging. The system allows users to select any target contact and repeatedly send a predefined message in real time, demonstrating browser automation, DOM scraping, and event simulation techniques.The project focuses on automation workflows, real-time interaction handling, and scalability of message dispatch logic. ",
+    image:
+      "https://miro.medium.com/v2/resize:fit:640/format:webp/1*gtvt7287C21nDbgC-n1AqA.jpeg",
+
+    tags: ["selinium"],
+    category: "",
+    github: "Repo is private",
+
   },
   {
     id: 1,
@@ -431,6 +565,7 @@ export const projects = [
     category: "AI",
     github: "https://github.com/abdullah000123/GoogleNet_from_scratch_implimentation",
   },
+ 
   {
     id: 4,
     title: "object Segmentaion",
